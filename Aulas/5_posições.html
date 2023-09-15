@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <title</title>
+    <style>
+        .relative{
+           
+            position: relative;
+            top: -150px;
+            left: 250px;
+        }
+        .static{
+            
+            position: block;
+        }
+        .absolute{  
+        /* ele não possui espaço fisico na pagina */
+            
+            position: absolute;
+            top:0px;
+            left: 1000px;
+            background: green;
+            width: 600px;
+        }
+        .fixed{
+        /* ele fica fixo enquanto rodamos a pagina */
+            position: fixed;
+            top:100px;
+            left: 0px;
+            background: green;
+            width: 600px;
+            z-index: 0;
+
+        }
+        #all{
+        background: green;
+        position: relative;
+        }
+        #conteudo{
+            width:230px; 
+        }
+        .Conteúdo1{
+            width: 100px;
+            height: 100px;
+            background: green;
+            border: 1px solid red;
+            position: absolute;
+            top:70px;
+            left:70px;
+            z-index: 1;
+        
+        }
+        .Conteúdo2{
+            width: 100px;
+            height: 100px;
+            background: green;
+            border: 1px solid red;
+            position: absolute;
+            z-index: 2;
+            top:50px;
+            left:50px;
+        }
+        .Conteúdo3{
+            width: 100px;
+            height: 100px;
+            background: green;
+            border: 1px solid red;
+            position: absolute;
+            z-index: 3;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="z-index">
+        <p class="Conteúdo1">Conteúdo 1</p>
+        <p class="Conteúdo2">Conteúdo 2</p>
+        <p class="Conteúdo3">Conteúdo 3</p>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+    <div>
+        <div id="tituto">
+            <h2>projeto horario</h2>
+        </div>
+        <div id="content">
+            <p class="static">(1)Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore modi in, voluptates nisi repudiandae quidem deleniti non quas maiores, quam asperiores suscipit nostrum, illo laborum quis error fugiat sunt possimus!</p>
+            <p >(2)Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore modi in, voluptates nisi repudiandae quidem deleniti non quas maiores, quam asperiores suscipit nostrum, illo laborum quis error fugiat sunt possimus!</p>
+            <p class="relative">(3)Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore modi in, voluptates nisi repudiandae quidem deleniti non quas maiores, quam asperiores suscipit nostrum, illo laborum quis error fugiat sunt possimus!</p>
+        </div>    
+    </div>
+    <div id="all">
+        <div id="title">
+            <h2>projeto horario</h2>
+        </div>
+        <div id="conteudo">
+            <p class="absolute">(1)Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore modi in, voluptates nisi repudiandae quidem deleniti non quas maiores, quam asperiores suscipit nostrum, illo laborum quis error fugiat sunt possimus!</p>
+            <p class="fixed">(2)Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore modi in, voluptates nisi repudiandae quidem deleniti non quas maiores, quam asperiores suscipit nostrum, illo laborum quis error fugiat sunt possimus!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci sint accusamus quae tenetur possimus exercitationem, cum numquam perferendis aspernatur velit aperiam ex, et animi. Nam, molestiae? Obcaecati delectus eveniet recusandae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quos, minima quo, nostrum dolores illo a iste voluptatibus similique ratione molestiae praesentium expedita ut incidunt dignissimos, amet quaerat. Consequatur, ab? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem accusantium molestiae modi quam illum praesentium aliquam amet commodi, nulla magni quae exercitationem error labore vel corporis ad perferendis ut eligendi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis non repellat doloribus aspernatur necessitatibus itaque velit beatae natus consectetur nobis, inventore accusantium, illum architecto facere magni quaerat consequuntur cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati amet aspernatur laboriosam nostrum recusandae sit corporis minima laudantium fuga nulla tenetur ducimus eius, labore architecto fugiat culpa, nam aut eos? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi deleniti atque enim, rerum iure consectetur minima alias assumenda consequuntur id! Facere exercitationem consectetur eveniet tempore magnam similique, fugit maxime quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, exercitationem veritatis voluptate alias quia maiores assumenda sapiente, voluptatibus consequatur maxime cumque reiciendis aut quasi illo voluptates fugiat repudiandae commodi expedita!</p>
+            <p>(3)Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore modi in, voluptates nisi repudiandae quidem deleniti non quas maiores, quam asperiores suscipit nostrum, illo laborum quis error fugiat sunt possimus!</p>
+        </div>    
+    </div>
+</body>
+</html>
